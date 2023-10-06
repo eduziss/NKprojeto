@@ -1,5 +1,21 @@
 .fundo {
+  color: white;
   background-color: blue;
   height: 60vh;
+  background-image: url("https://media.istockphoto.com/id/1355760884/pt/foto/big-data-and-cloud-computing-3d-rendering.jpg?s=1024x1024&w=is&k=20&c=MZJbrTCUkng9Txl2lwmEfikWtaIolg53TX4RumyzMf0=");
+  background-size: cover;
 
+}
+
+.material-icons{
+  margin: 50px;
+  font-size: 10rem;
+  border: 2px solid black;
+  padding: 50px;
+  border-radius: 50%;
+}
+
+.desc{
+  display: flex;
+  align-items: center;
 }
