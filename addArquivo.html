@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper grey darken-4">
+      <a href="index.html" class="brand-logo">CloudStack</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Meus arquivos</a></li>
+        <li class="active"><a href="">Adicionar Arquivo</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h4>Adicionar Arquivo</h4>
+
+    <div class="row">
+      <form class="col s12">
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="titulo" type="text" class="validate" minlength="3">
+            <label for="titulo">Título</label>
+            <span class="helper-text" data-error="Título muito curto. Coloque um titulo com pelo menos 3 caracteres."
+              data-success="">Nome do Arquivo</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="descricaoform" class="materialize-textarea"></textarea>
+            <label for="descricaoform">Descrição do Arquivo</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="titulo" type="text" class="validate" minlength="3">
+            <label for="titulo">Título</label>
+            <span class="helper-text" data-error="Título muito curto. Coloque um titulo com pelo menos 3 caracteres."
+              data-success="">Tipo do Arquivo</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="index.html" class="btn grey">Cancelar</a>
+          </div>
+          <div class="col">
+            <a href="index.html" class="btn">Salvar</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+</body>
+
+</html>

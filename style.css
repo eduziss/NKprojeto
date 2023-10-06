@@ -1,4 +1,5 @@
 .fundo {
+  position: static;
   color: white;
   background-color: blue;
   height: 60vh;
@@ -7,7 +8,7 @@
 
 }
 
-.material-icons{
+.material-icons {
   margin: 50px;
   font-size: 10rem;
   border: 2px solid black;
@@ -15,7 +16,29 @@
   border-radius: 50%;
 }
 
-.desc{
+.desc {
   display: flex;
   align-items: center;
+}
+
+.btn,
+.capa h1,
+p {
+  margin: 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+
+.capa {
+  padding: 9rem;
+}
+
+.btn {
+  background-color: rgb(53, 53, 53);
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
