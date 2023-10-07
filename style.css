@@ -3,42 +3,140 @@
   color: white;
   background-color: blue;
   height: 60vh;
-  background-image: url("https://media.istockphoto.com/id/1355760884/pt/foto/big-data-and-cloud-computing-3d-rendering.jpg?s=1024x1024&w=is&k=20&c=MZJbrTCUkng9Txl2lwmEfikWtaIolg53TX4RumyzMf0=");
+  background-image: url("./assets/kgFundo.png");
   background-size: cover;
+  transition: 0.5s;
+
+
+}
+
+.nav h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.8s;
+
+
+}
+
+.nav h3,
+a {
+  color: white;
+
+}
+
+.nav li {
+  display: inline;
+  margin-left: 15px;
+  align-items: center;
+  transition: 0.8s;
+  font-size: 1.2rem;
+}
+
+.nav li:hover {
+  border-bottom: 1px solid white;
 
 }
 
 .material-icons {
-  margin: 50px;
-  font-size: 10rem;
-  border: 2px solid black;
-  padding: 50px;
-  border-radius: 50%;
+  font-size: 7rem;
+  margin: 20px;
 }
 
 .desc {
-  display: flex;
-  align-items: center;
+  background-color: #242e66;
+  margin-top: 25px;
+  height: 60vh;
 }
 
-.btn,
-.capa h1,
-p {
+
+.capa h1 {
   margin: 0px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 15px;
-  transition: 0.5s;
 }
 
 .capa {
-  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+  gap: 25px;
 }
 
-.btn {
-  background-color: rgb(53, 53, 53);
+.botao {
+  background-image: linear-gradient(to bottom, #3f51b5, #5c6bc0);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 15px;
 }
 
-.btn:hover {
+.botao:hover {
+  background-image: linear-gradient(to bottom, #3366cc, #6699ff);
+}
+
+
+.col p {
+  border-right: 1px solid black;
+  padding-right: 10px;
+
+}
+
+.col {
+  margin-top: 10px;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.col:hover {
+  background-color: rgb(64, 64, 148);
+  color: white;
+  transform: scale(1.2);
+}
+
+.row {
+  margin-top: -15px;
+  width: 70%;
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
 }
+
+
+
+.ops {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px;
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(72, 72, 212);
+  text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+input[type="radio"]:checked+span {
+  color: rgb(0, 38, 255);
+}
+
+.colorTextBlue {
+  color: rgb(74, 74, 223);
+}
+
+/*Para eu queira personalizar os icones
+.Icx {
+  border: none;
+  padding: 44px;
+  font-size: 1rem;
+  align-items: center;
+}
+*/
