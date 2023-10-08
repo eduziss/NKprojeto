@@ -49,8 +49,9 @@ a {
 
 .desc {
   background-color: #242e66;
-  margin-top: 25px;
-  height: 60vh;
+  height: 70vh;
+  border-radius: 0px 0px 50% 50%;
+  margin-top: 60px;
 }
 
 
@@ -96,10 +97,11 @@ a {
   background-color: rgb(64, 64, 148);
   color: white;
   transform: scale(1.2);
+
 }
 
 .row {
-  margin-top: -15px;
+  margin-top: -20px;
   width: 70%;
   background-color: rgb(255, 255, 255);
 }
@@ -132,11 +134,70 @@ input[type="radio"]:checked+span {
   color: rgb(74, 74, 223);
 }
 
-/*Para eu queira personalizar os icones
-.Icx {
-  border: none;
-  padding: 44px;
-  font-size: 1rem;
+
+.c1 {
+  width: 22rem;
+  height: 20rem;
+  background-color: rgb(250, 243, 229);
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.cardes {
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 999;
+
+}
+
+.desc .c1 {
+  margin-top: -1%;
+}
+
+.desc .mid {
+  margin-top: 8%;
+}
+
+.material-symbols-outlined {
+  font-size: 9rem;
+  margin-top: -50px;
+  color: #e65100;
+}
+
+.desc img {
+  position: absolute;
+  transform: scale(0.5);
+  top: 68rem;
+  right: 2rem;
+
+}
+
+.negc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30vh;
+  color: white;
+}
+
+.baseboard {
+  margin-top: 150px;
+  background-color: #131836;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
   align-items: center;
 }
-*/
+
+.baseboard ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.baseboard h3 {
+  font-family: 'Permanent Marker', cursive;
+}

@@ -1,31 +1,25 @@
-const options1 = document.querySelector("#opcs1")
-const options2 = document.querySelector("#opcs2")
-const options3 = document.querySelector("#opcs3")
-const t = document.querySelector("#teste")
 
-options1.addEventListener("click", opcoes1)
-options2.addEventListener("click", opcoes2)
-options3.addEventListener("click", opcoes3)
+const ta = document.querySelector("#teste")
+const t2 = document.querySelector("#titulo")
+const t4 = document.querySelector("#descricaoform")
+const t3 = document.getElementsByName("group1")
 
 
-function opcoes1(){
-
-let imagem = document.createElement("img");
-
-imagem.src = "./assets/kgFundo.png";
+ta.addEventListener("click", t)
 
 
-imagem.style.width = "200px"; 
+function t() {
+  let elementosDeRadio = document.getElementsByName('group1');
+  let valorSelecionado = '';
 
-var container = document.getElementById("teste");
-container.appendChild(imagem);
+  for (var i = 0; i < elementosDeRadio.length; i++) {
+      if (elementosDeRadio[i].checked) {
+          valorSelecionado = elementosDeRadio[i].value;
+          break;
+      }
+  }
 
-}
 
-function opcoes2(){
-t.innerHTML = "Teasaatado"
-}
-
-function opcoes3(){
-t.innerHTML = "Testaaadaao"
-}
+alert("O arquivo de nome:  " + t2.value + "\nCom a descrição: " + t4.value + "\nDo tipo: " + valorSelecionado +
+"\nFoi salvo!! Vai em Meus Arquivos para ver ele " )
+};

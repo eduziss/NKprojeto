@@ -7,18 +7,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style_add.css">
   <title>Document</title>
 </head>
 
 <body>
 
   <nav>
-    <div class="nav-wrapper grey darken-4">
-      <a href="index.html" class="brand-logo">CloudStack</a>
+    <div class="nav-wrapper  blue darken-4">
+      <a href="index.html" class="brand-logo  primeiro-a">CloudStack</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/">Meus arquivos</a></li>
-        <li class="active"><a href="">Adicionar Arquivo</a></li>
+        <li><a href="meusArquivos.html">Meus arquivos</a></li>
+        <li class="active"><a href="addArquivo.html">Adicionar Arquivo</a></li>
         <li><a href="#">JavaScript</a></li>
       </ul>
     </div>
@@ -33,9 +38,9 @@
         <div class="row">
           <div class="input-field col s12">
             <input id="titulo" type="text" class="validate" minlength="3">
-            <label for="titulo">Título</label>
+            <label for="titulo">Título do Arquivo</label>
             <span class="helper-text" data-error="Título muito curto. Coloque um titulo com pelo menos 3 caracteres."
-              data-success="">Nome do Arquivo</span>
+              data-success="">Digite o nome do Arquivo</span>
           </div>
         </div>
 
@@ -43,30 +48,70 @@
           <div class="input-field col s12">
             <textarea id="descricaoform" class="materialize-textarea"></textarea>
             <label for="descricaoform">Descrição do Arquivo</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="titulo" type="text" class="validate" minlength="3">
-            <label for="titulo">Título</label>
             <span class="helper-text" data-error="Título muito curto. Coloque um titulo com pelo menos 3 caracteres."
-              data-success="">Tipo do Arquivo</span>
+              data-success="">Digite a descrição do Arquivo</span>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <a href="index.html" class="btn grey">Cancelar</a>
-          </div>
-          <div class="col">
-            <a href="index.html" class="btn">Salvar</a>
-          </div>
-        </div>
-      </form>
+        <p>Tipo do arquivo</p>
+        <p>
+          <label>
+            <input id="opcs1" name="group1" type="radio" checked value=".jpg" />
+            <span>.jpg</span>
+          </label>
+        </p>
+
+
+        <p>
+          <label>
+            <input id="opcs1" name="group1" type="radio" checked value=".png" />
+            <span>.png</span>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input id="opcs1" name="group1" type="radio" checked value=".avg" />
+            <span>.avg</span>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input id="opcs1" name="group1" type="radio" checked value=".zip/rar" />
+            <span>.zip/rar</span>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input id="opcs1" name="group1" type="radio" checked value=".jpeg" />
+            <span>.jpeg</span>
+          </label>
+        </p>
+
+    </div>
+
+    </form>
+
+    </div>
     </div>
 
 
+
+    <div class="row">
+      <div class="col">
+        <a href="index.html" class="btn orange darken-4 ">Cancelar</a>
+      </div>
+      <div class="col">
+        <a id="teste" href="meusArquivos.html" class="btn indigo darken-1">Salvar</a>
+      </div>
+    </div>
+    </form>
+    </div>
+
+  </main>
+  <script src="./assets/js/options.js"></script>
 
 </body>
 
