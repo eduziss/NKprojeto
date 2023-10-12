@@ -1,4 +1,4 @@
-
+/*Depois eu habilito
 const ta = document.querySelector("#teste")
 const t2 = document.querySelector("#titulo")
 const t4 = document.querySelector("#descricaoform")
@@ -23,3 +23,5 @@ function t() {
 alert("O arquivo de nome:  " + t2.value + "\nCom a descrição: " + t4.value + "\nDo tipo: " + valorSelecionado +
 "\nFoi salvo!! Vai em Meus Arquivos para ver ele " )
 };
+
+*/
