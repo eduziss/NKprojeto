@@ -1,15 +1,33 @@
 document.querySelector("#botao-cadastrar").addEventListener("click", () =>{
 
     let tarefas = JSON.parse (localStorage.getItem("tarefas")) || []
+
+
  
 
 
-    const tarefa = {
-        titulo: document.querySelector("#titulo").value,
-        descricao: document.querySelector("#descricaoform").value,
-      /*  pontos:  document.querySelector("#pontos").value*/
-    }
+    let elementosDeRadio = document.getElementsByName('group1');
+    let valorSelecionado = '';
 
+    for (var i = 0; i < elementosDeRadio.length; i++) {
+      if (elementosDeRadio[i].checked) {
+          valorSelecionado = elementosDeRadio[i].value;
+          break;
+      }
+  }
+
+  const tarefa = {
+    titulo: document.querySelector("#titulo").value,
+    descricao: document.querySelector("#descricaoform").value,
+    quantidade_arquivos: document.querySelector("#qtd_arquivos").value,
+    valorS: valorSelecionado
+    
+}
+
+ 
+
+
+    
 
     tarefas.push(tarefa)
     
