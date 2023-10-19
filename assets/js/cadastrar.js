@@ -17,10 +17,12 @@ document.querySelector("#botao-cadastrar").addEventListener("click", () =>{
   }
 
   const tarefa = {
+    id: Date.now(),
     titulo: document.querySelector("#titulo").value,
     descricao: document.querySelector("#descricaoform").value,
     quantidade_arquivos: document.querySelector("#qtd_arquivos").value,
-    valorS: valorSelecionado
+    valorS: valorSelecionado,
+    concluida: false
     
 }
 
