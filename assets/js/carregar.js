@@ -16,19 +16,18 @@ function criarCard (tarefa){
 //Todo seu codigo html
 
     card.innerHTML = `
-    <div class="card">
+    <div class="card ${tarefa.concluida == true ? 'grey':'' }">
     <div class="card-content">
       <span class="card-title">${tarefa.titulo}</span>
       <p> Descrição:  ${tarefa.descricao} <br>
       Tipo do arquivo:  ${tarefa.valorS} <br>
       Quantidade de arquivos:  ${tarefa.quantidade_arquivos}</p>
-      <span data-badge-caption="pontos" class="badge blue white-text">4</span>
     </div>
     <div class="card-action">
       <a href="#" class="btn red darken-4" onClick = "apagar(${tarefa.id})">
         <i class="material-icons">delete</i>
       </a>
-      <a href="#" class="btn green ">
+      <a href="#" class="btn green" onClick = "concluir(${tarefa.id})">
         <i class="material-icons">check</i>
       </a>
     </div>

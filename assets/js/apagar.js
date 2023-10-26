@@ -14,5 +14,6 @@ const tarefas_filtradas = tarefas.filter(tarefa => tarefa.id !== id)
 //Salvando a localstorage
 localStorage.setItem("tarefas" , JSON.stringify(tarefas_filtradas))
 atualizar()
+calcularEstatisticas()
 
 }

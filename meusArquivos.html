@@ -14,7 +14,9 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="style_add.css">
   <script src="/assets/js/apagar.js" defer ></script>
-  <script src="assets/js/carregar.js"></script>
+  <script src="/assets/js/concluir.js" defer ></script>
+  <script src="/assets/js/dashboard.js" defer ></script>
+  <script src="/assets/js/carregar.js"></script>
 
   <title>Document</title>
 </head>
@@ -34,6 +36,40 @@
 
 
   <main class="container">
+
+<div class="row" >
+  <div class="col s12 m6 l3">
+    <div class="card-panel center red white-text">
+      <h3 id="qtde-pendente" >0</h3>
+      <span>Tarefas Pendentes</span>
+    </div>
+  </div>
+  <div class="col s12 m6 l3">
+    <div class="card-panel center teal white-text">
+      <h3 id="qtde-concluida">0</h3>
+      <span>Tarefas Conluidas</span>
+    </div>
+  </div>
+  <!--
+
+      <div class="col s12 m6 l3">
+    <div class="card-panel center indigo white-text">
+      <h3 id="total-pontos">0</h3>
+      <span>Tarefas de Pontos</span>
+    </div>
+  </div>
+
+
+  -->
+
+  <div class="col s12 m6 l3">
+    <div class="card-panel center green white-text">
+      <h3 id="meus-pontos">0</h3>
+      <span>Quantidade de Arquivos</span>
+    </div>
+  </div>
+</div>
+
     <h4>Lista de Tarefas</h4>
     <div class="row" id="lista-tarefas" >   
     </div>    

@@ -38,5 +38,7 @@ document.querySelector("#botao-cadastrar").addEventListener("click", () =>{
 
 
    window.location.href = "meusArquivos.html"
+
+   calcularEstatisticas()
     
 } )
