@@ -169,8 +169,7 @@ input[type="radio"]:checked+span {
   position: absolute;
   transform: scale(0.5);
   top: 68rem;
-  left: -160px
-
+  left: -90px
 }
 
 .negc {
